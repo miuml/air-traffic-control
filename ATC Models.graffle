@@ -5,7 +5,7 @@
 	<key>ApplicationVersion</key>
 	<array>
 		<string>com.omnigroup.OmniGrafflePro</string>
-		<string>139.15.0.171074</string>
+		<string>139.16.0.171715</string>
 	</array>
 	<key>CreationDate</key>
 	<string>2012-08-14 16:29:56 +0000</string>
@@ -137,7 +137,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{1043.3900000000001, 17.591000000000001}, {96, 54}}</string>
+					<string>{{1043.3900000000001, 17.591000000000001}, {130, 54}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -201,7 +201,7 @@
 
 \f0\fs24 \cf0 &lt;%ModificationDate%&gt;\
 Leon Starr\
-sal.model.1 / 0.6}</string>
+sal.model.1 / 0.7}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -260,7 +260,7 @@ sal.model.1 / 0.6}</string>
 		</dict>
 	</array>
 	<key>ModificationDate</key>
-	<string>2012-09-01 05:20:37 +0000</string>
+	<string>2012-09-13 16:02:47 +0000</string>
 	<key>Modifier</key>
 	<string>Leon Starr</string>
 	<key>NotesVisible</key>
@@ -294,7 +294,7 @@ sal.model.1 / 0.6}</string>
 		<key>NSPaperName</key>
 		<array>
 			<string>string</string>
-			<string>EA1792C0-0E88-4544-811E-C783C5D52FBA</string>
+			<string>CAC68E1B-C0A6-4450-BA23-789D508337AF</string>
 		</array>
 		<key>NSPaperSize</key>
 		<array>
@@ -2432,7 +2432,7 @@ Station \{R3\}}</string>
 			<key>BackgroundGraphic</key>
 			<dict>
 				<key>Bounds</key>
-				<string>{{0, 0}, {1224, 792}}</string>
+				<string>{{0, 0}, {2448, 792}}</string>
 				<key>Class</key>
 				<string>SolidGraphic</string>
 				<key>FontInfo</key>
@@ -2484,7 +2484,7 @@ Station \{R3\}}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{277.20135171520303, 627.76354286766241}, {51, 15}}</string>
+					<string>{{274.20135171520303, 627.76354286766241}, {54, 15}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -2535,7 +2535,7 @@ Station \{R3\}}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
 
-\f0\fs20 \cf0 logged in}</string>
+\f0\fs20 \cf0 Logged in}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -2584,7 +2584,7 @@ Station \{R3\}}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{220.58382313112176, 384.0385566622146}, {91, 15}}</string>
+					<string>{{216.58382313112176, 384.0385566622146}, {95, 15}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -2635,7 +2635,7 @@ Station \{R3\}}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
 
-\f0\fs20 \cf0 log in(  station_id )}</string>
+\f0\fs20 \cf0 Log in(  Station_id )}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -2752,10 +2752,10 @@ Station \{R3\}}</string>
 \f0\fs20 \cf0 \expnd0\expndtw0\kerning0
 migrate self to On Duty Controller on R1\
 my_station = Duty Station where ID = in.station_id\kerning1\expnd0\expndtw0 \
-link self-&gt;R3-&gt;my_station\
+link self..R3..my_station\
 self.Time logged in = now()\
-signal logged in to self\
-signal in use to my_station}</string>
+signal Logged in -&gt; self\
+signal In use -&gt; my_station}</string>
 							</dict>
 							<key>TextPlacement</key>
 							<integer>0</integer>
@@ -2816,7 +2816,7 @@ signal in use to my_station}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\b\fs24 \cf0 LOGGING IN}</string>
+\f0\b\fs24 \cf0 Logging In}</string>
 								<key>VerticalPad</key>
 								<integer>0</integer>
 							</dict>
@@ -2843,7 +2843,7 @@ signal in use to my_station}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{654.58220317493044, 352.29467254813255}, {42, 15}}</string>
+					<string>{{652.58220317493044, 352.29467254813255}, {44, 15}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -2894,7 +2894,7 @@ signal in use to my_station}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
 
-\f0\fs20 \cf0 log out}</string>
+\f0\fs20 \cf0 Log out}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -2969,9 +2969,9 @@ signal in use to my_station}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs20 \cf0 \expnd0\expndtw0\kerning0
-signal user leaving to self-&gt;R3-&gt;Duty Station\
-unlink self-&gt;R3-&gt;Duty Station\
-signal off duty to self}</string>
+signal User leaving to self..R3..Duty Station\
+unlink self..R3..Duty Station\
+signal Off duty -&gt; self}</string>
 							</dict>
 							<key>TextPlacement</key>
 							<integer>0</integer>
@@ -3032,7 +3032,7 @@ signal off duty to self}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\b\fs24 \cf0 LOGGING OUT}</string>
+\f0\b\fs24 \cf0 Logging Out}</string>
 								<key>VerticalPad</key>
 								<integer>0</integer>
 							</dict>
@@ -3229,7 +3229,7 @@ return false}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{443.50486459084823, 601.10935913362175}, {97, 15}}</string>
+					<string>{{442.50486459084823, 601.10935913362175}, {98, 15}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -3280,7 +3280,7 @@ return false}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
 
-\f0\fs20 \cf0 must hand off zones}</string>
+\f0\fs20 \cf0 Must hand off zones}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -3403,11 +3403,11 @@ return false}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs20 \cf0 \expnd0\expndtw0\kerning0
-if self as On Duty Controller-&gt;R2-&gt;Control Zone:\
-    signal must handoff zones to self\
+if self as On Duty Controller..R2..Control Zone:\
+    signal Must handoff zones -&gt; self\
     UI::Warning( "Control Zones Active", self.ID )\
 else:\
-    signal log out to self\
+    signal Log out -&gt; self\
         }</string>
 							</dict>
 							<key>TextPlacement</key>
@@ -3496,7 +3496,7 @@ else:\
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{91.222802144540154, 96.171519748045526}, {89, 15}}</string>
+					<string>{{88.222802144540154, 96.171519748045526}, {92, 15}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -3547,7 +3547,7 @@ else:\
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
 
-\f0\fs20 \cf0 cannot go on duty}</string>
+\f0\fs20 \cf0 Cannot go on duty}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -3681,7 +3681,7 @@ Lifecycle}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{507.78093034166324, 96.171518574498975}, {44, 15}}</string>
+					<string>{{504.78093034166318, 96.171518574498975}, {47, 15}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -3732,7 +3732,7 @@ Lifecycle}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
 
-\f0\fs20 \cf0 off duty}</string>
+\f0\fs20 \cf0 Off duty}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -3741,7 +3741,7 @@ Lifecycle}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{716.21904389788403, 666.3291831467759}, {82, 15}}</string>
+					<string>{{713.21904389788403, 666.3291831467759}, {85, 15}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -3792,7 +3792,7 @@ Lifecycle}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
 
-\f0\fs20 \cf0 ready for a break}</string>
+\f0\fs20 \cf0 Ready for a break}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -3801,7 +3801,7 @@ Lifecycle}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{195.32440375230593, 175.36339433867983}, {125, 15}}</string>
+					<string>{{191.32440375230593, 175.36339433867983}, {129, 15}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -3852,7 +3852,7 @@ Lifecycle}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
 
-\f0\fs20 \cf0 ready for duty( station_id )}</string>
+\f0\fs20 \cf0 Ready for duty( Station_id )}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -4223,10 +4223,10 @@ Lifecycle}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs20 \cf0 \expnd0\expndtw0\kerning0
-if not self.check_break_long_enough():\
-    signal cannot go on duty to self\
+if self.Break_long_enough():\
+    signal Log in( in.Station_id ) -&gt; self\
 else:\
-    generate log in( in.station_id ) to self}</string>
+    signal Cannot go on duty -&gt; self}</string>
 							</dict>
 							<key>TextPlacement</key>
 							<integer>0</integer>
@@ -4504,7 +4504,7 @@ else:\
 			<key>GridInfo</key>
 			<dict/>
 			<key>HPages</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>KeepToScale</key>
 			<false/>
 			<key>Layers</key>
@@ -4617,7 +4617,7 @@ else:\
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{389.41046113932981, 473.37959058536507}, {92, 15}}</string>
+					<string>{{388.41046113932981, 473.37959058536507}, {93, 15}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -4668,7 +4668,7 @@ else:\
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
 
-\f0\fs20 \cf0 max shift exceeded}</string>
+\f0\fs20 \cf0 Max shift exceeded}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -4677,7 +4677,7 @@ else:\
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{268.8834613508235, 168.5714954903325}, {62, 15}}</string>
+					<string>{{266.8834613508235, 168.5714954903325}, {64, 15}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -4728,7 +4728,7 @@ else:\
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
 
-\f0\fs20 \cf0 user leaving}</string>
+\f0\fs20 \cf0 User leaving}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -4897,8 +4897,8 @@ else:\
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f0\fs20 \cf0 UI::Warning( "Max Shift Exceeded", \
-    self.ID, self-&gt;R3-&gt;On Duty Controller.ID )}</string>
+\f0\fs20 \cf0 send Warning( "Max Shift Exceeded", \
+    self.ID, self..R3..On Duty Controller.ID ) =&gt; UI}</string>
 							</dict>
 							<key>TextPlacement</key>
 							<integer>0</integer>
@@ -4994,7 +4994,7 @@ else:\
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{651.23111303778421, 168.57150430288632}, {48, 15}}</string>
+					<string>{{649.23111303778421, 168.57150430288632}, {50, 15}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -5045,7 +5045,7 @@ else:\
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
 
-\f0\fs20 \cf0 available}</string>
+\f0\fs20 \cf0 Available}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -5214,8 +5214,8 @@ else:\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs20 \cf0 \expnd0\expndtw0\kerning0
-cancel max shift exceeded to self\
-signal available to self\
+cancel max shift exceeded -&gt; self\
+signal available -&gt; self\
 \
 }</string>
 							</dict>
@@ -5385,7 +5385,7 @@ Lifecycle}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{665.8779806272662, 330.13578383437147}, {62, 15}}</string>
+					<string>{{663.8779806272662, 330.13578383437147}, {64, 15}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -5436,7 +5436,7 @@ Lifecycle}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
 
-\f0\fs20 \cf0 user leaving}</string>
+\f0\fs20 \cf0 User leaving}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -5496,7 +5496,7 @@ Lifecycle}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
 
-\f0\fs20 \cf0 in use}</string>
+\f0\fs20 \cf0 In use}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -5611,7 +5611,7 @@ Lifecycle}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs20 \cf0 \expnd0\expndtw0\kerning0
-signal max shift exceeded to self delayed by( Shift Specification.Max shift where name = 'singleton')}</string>
+signal Max shift exceeded -&gt; self delayed by( Shift Specification.Max shift where name = 'singleton')}</string>
 							</dict>
 							<key>TextPlacement</key>
 							<integer>0</integer>
@@ -5933,7 +5933,7 @@ signal max shift exceeded to self delayed by( Shift Specification.Max shift wher
 			<key>BackgroundGraphic</key>
 			<dict>
 				<key>Bounds</key>
-				<string>{{0, 0}, {1224, 792}}</string>
+				<string>{{0, 0}, {2448, 792}}</string>
 				<key>Class</key>
 				<string>SolidGraphic</string>
 				<key>FontInfo</key>
@@ -5985,7 +5985,38 @@ signal max shift exceeded to self delayed by( Shift Specification.Max shift wher
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{582.85969692726644, 91.227308028604625}, {376.98724365234375, 622.9647216796875}}</string>
+					<string>{{85.100286810203997, 456.56964884265193}, {326.84188842773438, 106.18456268310547}}</string>
+					<key>Class</key>
+					<string>ShapedGraphic</string>
+					<key>ID</key>
+					<integer>9331</integer>
+					<key>Shape</key>
+					<string>Rectangle</string>
+					<key>Style</key>
+					<dict/>
+					<key>Text</key>
+					<dict>
+						<key>Align</key>
+						<integer>0</integer>
+						<key>Text</key>
+						<string>{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 Futura-Medium;\f1\fnil\fcharset0 PalatinoSansInflCom-Regular;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs32 \cf0 Symbols
+\f1\fs24 \
+\
+-&gt;	signal destination (object)\
+=&gt;	external domain destination (external entity / domain)\
+..	relationship hop (in relationship navigation)}</string>
+					</dict>
+					<key>TextPlacement</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>Bounds</key>
+					<string>{{474.66908257001444, 89.770230030710124}, {376.98724365234375, 622.9647216796875}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -6039,7 +6070,7 @@ navigation along a chain of relationships terminating in 0..1 or 1 multiplicity 
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{562.36156673808614, 38.483122496007866}, {417.98348999023438, 683.72991943359375}}</string>
+					<string>{{454.17095238083419, 37.026044498113315}, {417.98348999023438, 683.72991943359375}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -6069,7 +6100,7 @@ navigation along a chain of relationships terminating in 0..1 or 1 multiplicity 
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{125.96097522765214, 171.59791901876878}, {364.15750387085518, 101.18228912353516}}</string>
+					<string>{{47.784678059105225, 165.62366083703313}, {364.15750387085518, 101.18228912353516}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -6111,8 +6142,8 @@ navigation along a chain of relationships terminating in 0..1 or 1 multiplicity 
 \f0\fs20 \cf0 my_new_controller = On Duty Controller where id = in.controller_id\
 if not my_new_controller:\
     return false\
-unlink self-&gt;R2-&gt;On Duty Controller\
-link self-&gt;R2-&gt;my_new_controller\
+unlink self..R2..On Duty Controller\
+link self..R2..my_new_controller\
 return true}</string>
 					</dict>
 					<key>TextPlacement</key>
@@ -6120,7 +6151,7 @@ return true}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{114.94220691710528, 132.24459899594473}, {385.7689208984375, 151.74118041992188}}</string>
+					<string>{{36.765909748558379, 126.27034081420906}, {385.7689208984375, 151.74118041992188}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -6244,7 +6275,7 @@ Methods}</string>
 			<key>GridInfo</key>
 			<dict/>
 			<key>HPages</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>KeepToScale</key>
 			<false/>
 			<key>Layers</key>
@@ -6302,13 +6333,18 @@ Methods}</string>
 	<key>WindowInfo</key>
 	<dict>
 		<key>CurrentSheet</key>
-		<integer>1</integer>
+		<integer>2</integer>
 		<key>ExpandedCanvases</key>
-		<array/>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>ATC Lifecycle</string>
+			</dict>
+		</array>
 		<key>FitInWindow</key>
 		<true/>
 		<key>Frame</key>
-		<string>{{101, 60}, {1658, 1117}}</string>
+		<string>{{2009, 15}, {1658, 1117}}</string>
 		<key>ListView</key>
 		<true/>
 		<key>OutlineWidth</key>
