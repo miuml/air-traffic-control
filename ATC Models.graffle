@@ -137,7 +137,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{1043.3900000000001, 17.591000000000001}, {96, 54}}</string>
+					<string>{{1043.3900000000001, 17.591000000000001}, {103, 54}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -201,7 +201,7 @@
 
 \f0\fs24 \cf0 &lt;%ModificationDate%&gt;\
 Leon Starr\
-sal.model.1 / 0.8}</string>
+sal.model.1 / 0.9}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -260,7 +260,7 @@ sal.model.1 / 0.8}</string>
 		</dict>
 	</array>
 	<key>ModificationDate</key>
-	<string>2012-10-12 15:49:43 +0000</string>
+	<string>2012-10-15 19:50:22 +0000</string>
 	<key>Modifier</key>
 	<string>Leon Starr</string>
 	<key>NotesVisible</key>
@@ -2752,8 +2752,8 @@ migrate self to On Duty Controller on R1\
 my_station = Duty Station where ID = in.station_id\kerning1\expnd0\expndtw0 \
 link self..R3..my_station\
 self.Time logged in = now()\
-signal Logged in -&gt; self\
-signal In use -&gt; my_station}</string>
+Logged in -&gt; self\
+In use -&gt; my_station}</string>
 							</dict>
 							<key>TextPlacement</key>
 							<integer>0</integer>
@@ -2967,10 +2967,10 @@ signal In use -&gt; my_station}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs20 \cf0 \expnd0\expndtw0\kerning0
-signal User leaving to self..R3..Duty Station\
+User leaving -&gt; self..R3..Duty Station\
 unlink self..R3..Duty Station\
 migrate self to Off Duty Controller on R1\
-signal Off duty -&gt; self}</string>
+Off duty -&gt; self}</string>
 							</dict>
 							<key>TextPlacement</key>
 							<integer>0</integer>
@@ -3311,7 +3311,7 @@ return false}</string>
 					<real>-1</real>
 					<key>Points</key>
 					<array>
-						<string>{578.0877747978941, 593.13595020375146}</string>
+						<string>{569.43548576059686, 593.53356180897538}</string>
 						<string>{409.83383461800622, 655.42985322382276}</string>
 					</array>
 					<key>Style</key>
@@ -3341,7 +3341,7 @@ return false}</string>
 					<array>
 						<dict>
 							<key>Bounds</key>
-							<string>{{578.0877747978941, 565.64609069720814}, {261.69540405273438, 88.358138009961522}}</string>
+							<string>{{569.43548576059675, 566.04370230243205}, {278.99996451972851, 88.358138009961522}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FontInfo</key>
@@ -3403,10 +3403,10 @@ return false}</string>
 
 \f0\fs20 \cf0 \expnd0\expndtw0\kerning0
 if self as On Duty Controller..R2..Control Zone:\
-    signal Must handoff zones -&gt; self\
-    UI::Warning( "Control Zones Active", self.ID )\
+    Must handoff zones -&gt; self\
+    Warning( "Control Zones Active", self.ID ) =&gt; UI\
 else:\
-    signal Log out -&gt; self\
+    Log out -&gt; self\
         }</string>
 							</dict>
 							<key>TextPlacement</key>
@@ -3416,7 +3416,7 @@ else:\
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{578.0878080775542, 532.26767170033327}, {261.69540405273438, 33.378414533240708}}</string>
+							<string>{{569.43552124086841, 532.66528330555718}, {278.99996451972851, 33.378414533240708}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FontInfo</key>
@@ -3877,7 +3877,7 @@ Lifecycle}</string>
 \f0\fs24 \cf0 Big Transition}</string>
 					<key>Points</key>
 					<array>
-						<string>{708.93549870875756, 532.26767170033327}</string>
+						<string>{708.93549870875756, 532.66528330555707}</string>
 						<string>{708.93549870875756, 333.3735819182545}</string>
 					</array>
 					<key>Style</key>
@@ -3976,7 +3976,7 @@ Lifecycle}</string>
 					<key>Points</key>
 					<array>
 						<string>{479.58382630315822, 688.20591364304892}</string>
-						<string>{708.93549346409134, 654.00422870716966}</string>
+						<string>{708.93548576059686, 654.40184031239357}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -4223,9 +4223,9 @@ Lifecycle}</string>
 
 \f0\fs20 \cf0 \expnd0\expndtw0\kerning0
 if self.Break_long_enough():\
-    signal Log in( in.Station_id ) -&gt; self\
+    Log in( in.Station_id ) -&gt; self\
 else:\
-    signal Cannot go on duty -&gt; self}</string>
+    Cannot go on duty -&gt; self}</string>
 							</dict>
 							<key>TextPlacement</key>
 							<integer>0</integer>
@@ -4896,8 +4896,7 @@ else:\
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f0\fs20 \cf0 send Warning( "Max Shift Exceeded", \
-    self.ID, self..R3..On Duty Controller.ID ) =&gt; UI}</string>
+\f0\fs20 \cf0 Warning( "Max Shift Exceeded", self.ID ) =&gt; UI}</string>
 							</dict>
 							<key>TextPlacement</key>
 							<integer>0</integer>
@@ -5213,8 +5212,8 @@ else:\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs20 \cf0 \expnd0\expndtw0\kerning0
-cancel max shift exceeded -&gt; self\
-signal available -&gt; self\
+cancel Max shift exceeded -&gt; self\
+Available -&gt; self\
 \
 }</string>
 							</dict>
@@ -5610,7 +5609,7 @@ Lifecycle}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs20 \cf0 \expnd0\expndtw0\kerning0
-signal Max shift exceeded -&gt; self delayed by( Shift Specification.Max shift where name = 'singleton')}</string>
+Max shift exceeded -&gt; self delayed by( Shift Specification.Max shift where name = 'singleton')}</string>
 							</dict>
 							<key>TextPlacement</key>
 							<integer>0</integer>
@@ -6141,7 +6140,8 @@ navigation along a chain of relationships terminating in 0..1 or 1 multiplicity 
 \f0\fs20 \cf0 my_new_controller = On Duty Controller where id = in.controller_id\
 if not my_new_controller:\
     return false\
-unlink self..R2..On Duty Controller\
+if not( unlink self..R2..On Duty Controller )\
+    return false\
 link self..R2..my_new_controller\
 return true}</string>
 					</dict>
@@ -7393,7 +7393,7 @@ Traffic : int\
 	<key>WindowInfo</key>
 	<dict>
 		<key>CurrentSheet</key>
-		<integer>1</integer>
+		<integer>2</integer>
 		<key>ExpandedCanvases</key>
 		<array/>
 		<key>FitInWindow</key>
