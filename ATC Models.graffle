@@ -137,7 +137,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{1043.3900000000001, 17.591000000000001}, {105, 54}}</string>
+					<string>{{1043.3900000000001, 17.591000000000001}, {100, 54}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -201,7 +201,7 @@
 
 \f0\fs24 \cf0 &lt;%ModificationDate%&gt;\
 Leon Starr\
-sal.model.1 / 1.1}</string>
+sal.model.1 / 1.2}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -260,7 +260,7 @@ sal.model.1 / 1.1}</string>
 		</dict>
 	</array>
 	<key>ModificationDate</key>
-	<string>2012-11-28 17:14:56 +0000</string>
+	<string>2013-03-03 17:57:15 +0000</string>
 	<key>Modifier</key>
 	<string>Leon Starr</string>
 	<key>NotesVisible</key>
@@ -294,7 +294,7 @@ sal.model.1 / 1.1}</string>
 		<key>NSPaperName</key>
 		<array>
 			<string>string</string>
-			<string>FD7E2F80-9073-45D1-AF14-6E226BEA376A</string>
+			<string>C8E85564-4D4F-4600-830C-93C341960AE8</string>
 		</array>
 		<key>NSPaperSize</key>
 		<array>
@@ -449,7 +449,7 @@ sal.model.1 / 1.1}</string>
 					<array>
 						<dict>
 							<key>Bounds</key>
-							<string>{{96.414100697784249, 386.32507598513195}, {125.1519775390625, 66}}</string>
+							<string>{{93.085106619076782, 506.91489483933469}, {125.15198516845703, 66}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -505,7 +505,7 @@ Max shift : Duration\
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{96.414100697784249, 361.32507598513195}, {125.1519775390625, 25}}</string>
+							<string>{{93.085106619076782, 481.91489483933464}, {125.15198516845703, 25}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -758,7 +758,7 @@ Max shift : Duration\
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
 
-\f0\fs20 \cf0 0..1}</string>
+\f0\fs20 \cf0 0.1}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -816,7 +816,7 @@ Max shift : Duration\
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
 
-\f0\fs20 \cf0 0..*}</string>
+\f0\fs20 \cf0 0.*}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -2744,7 +2744,7 @@ Station \{R3\}}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs20 \cf0 \expnd0\expndtw0\kerning0
-hoff_zone = self..R2..Control Zone where Name = in.zone\
+hoff_zone = self.R2.Control Zone where Name = in.zone\
 hoff_zone.Hand Off( in.controller )\
 Handoff complete -&gt; self        }</string>
 							</dict>
@@ -3110,7 +3110,7 @@ Handoff complete -&gt; self        }</string>
 \f0\fs20 \cf0 \expnd0\expndtw0\kerning0
 migrate self to On Duty Controller on R1\
 my_station = Duty Station where ID = in.station_id\kerning1\expnd0\expndtw0 \
-link self..R3..my_station\
+link self.R3.my_station\
 self.Time logged in = now()\
 Logged in -&gt; self\
 In use -&gt; my_station}</string>
@@ -3327,8 +3327,8 @@ In use -&gt; my_station}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs20 \cf0 \expnd0\expndtw0\kerning0
-User leaving -&gt; self..R3..Duty Station\
-unlink self..R3..Duty Station\
+User leaving -&gt; self.R3.Duty Station\
+unlink self.R3.Duty Station\
 migrate self to Off Duty Controller on R1\
 Off duty -&gt; self}</string>
 							</dict>
@@ -3762,7 +3762,7 @@ return false}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs20 \cf0 \expnd0\expndtw0\kerning0
-if self as On Duty Controller..R2..Control Zone:\
+if self as On Duty Controller.R2.Control Zone:\
     Must handoff zones -&gt; self\
     Warning( "Control Zones Active", self.ID ) =&gt; UI\
 else:\
@@ -6367,7 +6367,7 @@ Max shift exceeded -&gt; self delayed by( Shift Specification.Max shift where na
 \
 -&gt;	signal destination (object)\
 =&gt;	external domain destination (external entity / domain)\
-..	relationship hop (in relationship navigation)}</string>
+.	relationship hop (in relationship navigation)}</string>
 					</dict>
 					<key>TextPlacement</key>
 					<integer>0</integer>
@@ -6399,7 +6399,7 @@ Max shift exceeded -&gt; self delayed by( Shift Specification.Max shift where na
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f0\fs24 \cf0 The goal is to make the action language highly readable from a system specification perspective, clearing out all the tedium and making the language a bit sexier for our audience.  In that spirit...\
+\f0\fs24 \cf0 The goal is to make the action language highly readable from a system specification perspective, clearing out all the tedium and making the language a bit sexier for our audience.  In that spirit..\
 \
 Variable names require underscores\
 \
@@ -6420,7 +6420,7 @@ An empty object handle variable yields false when used in a boolean expression\
 \
 a where phrase that specifies an identifier match as criteria is understood to return a single instance\
 \
-navigation along a chain of relationships terminating in 0..1 or 1 multiplicity will be enforced by the architecture, so returning a single instance is implied  (no need for select one vs. select many)\
+navigation along a chain of relationships terminating in 0.1 or 1 multiplicity will be enforced by the architecture, so returning a single instance is implied  (no need for select one vs. select many)\
 }</string>
 					</dict>
 					<key>TextPlacement</key>
@@ -6500,9 +6500,9 @@ navigation along a chain of relationships terminating in 0..1 or 1 multiplicity 
 \f0\fs20 \cf0 my_new_controller = On Duty Controller where id = in.controller_id\
 if not my_new_controller:\
     return false\
-if not( unlink self..R2..On Duty Controller )\
+if not( unlink self.R2.On Duty Controller )\
     return false\
-link self..R2..my_new_controller\
+link self.R2.my_new_controller\
 return true}</string>
 					</dict>
 					<key>TextPlacement</key>
@@ -6985,7 +6985,7 @@ Methods}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
 
-\f0\fs20 \cf0 0..1}</string>
+\f0\fs20 \cf0 0.1}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -7101,7 +7101,7 @@ Methods}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
 
-\f0\fs20 \cf0 0..1}</string>
+\f0\fs20 \cf0 0.1}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -7753,16 +7753,18 @@ Traffic : int\
 	<key>WindowInfo</key>
 	<dict>
 		<key>CurrentSheet</key>
-		<integer>2</integer>
+		<integer>0</integer>
 		<key>ExpandedCanvases</key>
 		<array>
+			<dict>
+				<key>name</key>
+				<string>Class Diagram</string>
+			</dict>
 			<dict>
 				<key>name</key>
 				<string>ATC Lifecycle</string>
 			</dict>
 		</array>
-		<key>FitInWindow</key>
-		<true/>
 		<key>Frame</key>
 		<string>{{140, 57}, {1658, 1117}}</string>
 		<key>ListView</key>
@@ -7778,9 +7780,9 @@ Traffic : int\
 		<key>SidebarWidth</key>
 		<integer>120</integer>
 		<key>VisibleRegion</key>
-		<string>{{-15, 0}, {1253.8627920778417, 791.17671909836235}}</string>
+		<string>{{0, 0}, {810.10638503345126, 511.7021289574393}}</string>
 		<key>Zoom</key>
-		<real>1.2146464586257935</real>
+		<real>1.8799999952316284</real>
 		<key>ZoomValues</key>
 		<array>
 			<array>
@@ -7795,8 +7797,8 @@ Traffic : int\
 			</array>
 			<array>
 				<string>Class Diagram</string>
+				<real>1.8799999952316284</real>
 				<real>1.0890523195266724</real>
-				<real>0.0</real>
 			</array>
 			<array>
 				<string>Duty Station</string>
